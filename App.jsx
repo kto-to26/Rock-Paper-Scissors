@@ -96,7 +96,7 @@ const App = () => {
     }
 
     // Timeout for playGame function
-    const timeoutId = setTimeout(playGame, 1000);
+    const timeoutId = setTimeout(playGame, 0);
 
     // Cleanup function
     return () => clearTimeout(timeoutId);
