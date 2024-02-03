@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body,html{
+  width: 100%;
+  height: 100vh;
+}
+
+.content{
+  padding: 50px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #101318;
+  // options
+  .options{
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 1000px;
+    height: 700px;
+    border-radius: 25px;
+    background: #999898;
+    // ring
+    .ring{
+      border-radius: 25px 25px 0 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      // user
+      .user{
+        width: 150px;
+        height: 150px;
+        background: #000;
+      }
+    
+      // ----------------------------------------------------------------------
+      // user one
+      // rock
+      .rock_one{
+        background: url(../public/one/кулак\ первая.png)0 0/cover no-repeat;
+      }
+      // paper
+      .paper_one{
+        background: url(../public/one/бумага\ первая.png)0 0/cover no-repeat ;
+      }
+      // paper
+      .scissors_one{
+        background: url(../public/one/ножницы\ первая.png)0 0/cover no-repeat ;
+      }
+      // -----------------------------------------------------------------------
+      // user two
+      // rock
+      .rock_two{
+        background: url(../public/two/кулак\ вторая.png)0 0/cover no-repeat;
+      }
+      // paper
+      .paper_two{
+        background: url(../public/two/бумага\ вторая.png)0 0/cover no-repeat;
+      }
+      // paper
+      .scissors_two{
+        background: url(../public/two/ножницы\ вторая.png)0 0/cover no-repeat;
+      }
+    }
+    // winners
+    .winners{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      color: red;
+    }
+    // choice
+    .choice{
+      border-radius: 0 0 25px 25px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      // label
+      label{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        // button
+        button{
+          cursor: pointer;
+          width: 100px;
+          height: 100px;
+          margin-bottom: 15px;
+        }
+        // rock
+        #rock{
+          background: url(../public/img/кулак\ мал\ новый.png)0 0 /cover no-repeat;
+          border: none;
+        }
+        //papper
+        #paper{
+          background: url(../public/img/бумага\ мал\ новая.png)0 0 /cover no-repeat;
+          border: none;
+        }
+         //scissors
+         #scissors{
+          background: url(../public/img/ножницы\ мал\ новые.png)0 0 /cover no-repeat;
+          border: none;
+        }
+      }
+      
+    }
+  }
+  // text
+  .text{
+    color: white;
+    width: 450px;
+    font-size: 70px;
+  }
+}
